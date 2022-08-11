@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-bg-color: hsl(30, 38%, 92%);
+    --card-bg-color:    white;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.container {
+    border: 2px solid black;
+    background-color: var(--card-bg-color);
+    height: 40rem;
+    width: 20rem;
+    margin: 2rem;
+    border-radius: 4% / 2%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.card-img{
+    object-fit: contain;
+    overflow: hidden;
+    max-height: 40%;
+}
+
+
+
+
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    display: none;
+}

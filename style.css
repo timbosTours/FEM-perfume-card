@@ -5,11 +5,17 @@
 
 :root {
     --main-bg-color: hsl(30, 38%, 92%);
-    --card-bg-color:    white;
+    --card-bg-color: white;
 }
 
 body {
     background-color: var(--main-bg-color);
+
+    /* Center the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
@@ -27,11 +33,15 @@ body {
     object-fit: contain;
     overflow: hidden;
     max-height: 40%;
+    max-width: 100%;
 }
 
-
-
-
+.mobile-img {
+    object-fit: contain;
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+}
 
 .attribution {
     position: fixed;

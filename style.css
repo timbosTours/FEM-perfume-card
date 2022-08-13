@@ -1,8 +1,6 @@
 /* TO DO!!!!! */
 
-/* add variables for fonts  */
-/*  style text */
-/* style button and prices */
+/* create desktop design with media queries and ??? */
 
 
 
@@ -111,6 +109,7 @@ body {
     width: 20rem;
     border-radius: 10px;
     border: none;
+    /* Position the cart SVG */
     position: relative;
     left: 1rem;
 }
@@ -131,4 +130,8 @@ body {
     position: fixed;
     bottom: 0;
     display: none;
+}
+
+@media (max-width: 375px) {
+    
 }

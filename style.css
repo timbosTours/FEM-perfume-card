@@ -1,3 +1,11 @@
+/* TO DO!!!!! */
+
+/* add variables for fonts  */
+/*  style text */
+/* style button and prices */
+
+
+
 * {
     padding: 0;
     margin: 0;
@@ -6,6 +14,14 @@
 :root {
     --main-bg-color: hsl(30, 38%, 92%);
     --card-bg-color: white;
+    --green-btn-color: hsl(158, 36%, 37%);
+
+    --lighter-text: hsl(212, 12%, 48%);
+    --medium-text: hsl(228, 12%, 48%);
+
+    --ff-fancy-500: 'Fraunces', serif;
+    --ff-plain: 'Montserrat', sans-serif;
+    
 }
 
 body {
@@ -19,10 +35,9 @@ body {
 }
 
 .container {
-    border: 2px solid black;
     background-color: var(--card-bg-color);
     height: 40rem;
-    width: 20rem;
+    width: 22rem;
     margin: 2rem;
     border-radius: 4% / 2%;
     object-fit: contain;
@@ -36,11 +51,80 @@ body {
     max-width: 100%;
 }
 
-.mobile-img {
+#mobile-img {
     object-fit: contain;
     overflow: hidden;
     max-height: 100%;
     max-width: 100%;
+}
+
+#perfume {
+    padding: 1rem;
+    color: var(--medium-text);
+    font-family: var(--ff-plain);
+    font-weight: 500;
+    font-size: small;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+#title{
+    padding-left: 1rem;
+    font-family: var(--ff-fancy-500);
+    font-size: xx-large;
+
+}
+
+#main-text{
+    color: var(--medium-text);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    font-family: var(--ff-plain);
+    font-size: 14;
+}
+
+.prices{
+    display: flex;
+    padding: 1rem;
+}
+
+#sale-price{
+    padding: 1rem;
+    padding-left: 0rem;
+    color: var(--green-btn-color);
+    font-family: var(--ff-fancy-500);
+    font-size: xx-large;
+}
+
+#retail-price{
+    color: var(--lighter-text);
+    text-decoration: line-through;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+#btn {
+    background-color: var(--green-btn-color);
+    height: 3rem;
+    width: 20rem;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    left: 1rem;
+}
+
+#cart-svg{
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+}
+
+#addtocart{
+    color: white;
+    text-decoration: none;
+    font-family: var(--ff-plain);
 }
 
 .attribution {

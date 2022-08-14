@@ -118,6 +118,9 @@ body {
     /* Position the cart SVG */
     position: relative;
     left: 1rem; 
+    color: white;
+    text-decoration: none;
+    font-family: var(--ff-plain);
 }
 
 #btn:hover {
@@ -130,11 +133,6 @@ body {
     bottom: 30%;
 }
 
-#addtocart{
-    color: white;
-    text-decoration: none;
-    font-family: var(--ff-plain);
-}
 
 .attribution {
     position: fixed;

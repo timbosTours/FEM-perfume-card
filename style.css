@@ -41,7 +41,7 @@ body {
 
 .container {
     background-color: var(--card-bg-color);
-    max-height: 40em;
+    min-height: 30em;
     width: 20rem;
     margin: 2rem;
     border-radius: 4% / 2%;
@@ -120,6 +120,10 @@ body {
     left: 1rem; 
 }
 
+#btn:hover {
+    background-color: hsl(158, 25%, 20%);
+}
+
 #cart-svg{
     position: absolute;
     left: 25%;
@@ -138,7 +142,7 @@ body {
     display: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .container{
         display: flex;
         min-width: 40rem;

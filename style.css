@@ -9,6 +9,13 @@
     margin: 0;
 }
 
+img {
+    object-fit: contain;
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 :root {
     --main-bg-color: hsl(30, 38%, 92%);
     --card-bg-color: white;
@@ -34,8 +41,8 @@ body {
 
 .container {
     background-color: var(--card-bg-color);
-    height: 40rem;
-    width: 22rem;
+    max-height: 40em;
+    width: 20rem;
     margin: 2rem;
     border-radius: 4% / 2%;
     object-fit: contain;
@@ -49,12 +56,10 @@ body {
     max-width: 100%;
 }
 
-#mobile-img {
-    object-fit: contain;
-    overflow: hidden;
-    max-height: 100%;
-    max-width: 100%;
+#desktop-img{
+    display: none;
 }
+
 
 #perfume {
     padding: 1rem;
@@ -106,17 +111,18 @@ body {
 #btn {
     background-color: var(--green-btn-color);
     height: 3rem;
-    width: 20rem;
+    width: 18rem;
     border-radius: 10px;
     border: none;
+    margin-bottom: 1rem;
     /* Position the cart SVG */
     position: relative;
-    left: 1rem;
+    left: 1rem; 
 }
 
 #cart-svg{
     position: absolute;
-    left: 30%;
+    left: 25%;
     bottom: 30%;
 }
 
@@ -132,6 +138,35 @@ body {
     display: none;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 800px) {
+    .container{
+        display: flex;
+        min-width: 40rem;
+        max-height: 30em;
+        border-radius: 15px;
+    }
     
+    #mobile-img{
+        display: none;
+    }
+
+    #desktop-img{
+        display: flex;
+    }
+
+    .card-text{
+        min-height: 100%;
+        max-width: 50%;
+        margin: auto;
+    }
+
+    #title{
+        max-width: 75%;
+    }
+
+    #main-text{
+        max-width: 80%;
+    }
+
+
 }

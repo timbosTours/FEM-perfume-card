@@ -32,7 +32,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/screenshot-desktop.png)
-![](./images/image-product-mobile.jpg)
+![](./images/screenshot-mobile.png)
 
 
 ### Links

@@ -32,6 +32,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/screenshot-desktop.png)
+This next screenshot only shows the blue border on the button when I push it to github.
 ![](./images/screenshot-mobile.png)
 
 

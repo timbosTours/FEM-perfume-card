@@ -1,93 +1,110 @@
-# Frontend Mentor - Product preview card component
+# Frontend Mentor - Product preview card component solution
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## Overview
+I created this Frontend Mentor solution using a mobile first approach, flex and media queries.  
 
-## The challenge
+### The challenge
 
-Your challenge is to build out this product preview card component and get it looking as close to the design as possible.
+Users should be able to:
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- View the optimal layout depending on their    device's screen size(
+  I set the media query to 700px. Making the breakpoint just bigger than the card. I would be greatful for some feedback on the layout based on other browser sizes.
+)
+- See hover on the add to cart button.
 
-Your users should be able to:
+### Screenshot
 
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
+![](./images/screenshot-desktop.png)
+![](./images/image-product-mobile.jpg)
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
-## Where to find everything
+### Links
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- Solution URL: https://github.com/timbosTours/FEM-perfume-card
+- Live Site URL: https://timbostours.github.io/FEM-perfume-card/
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## My process
+I went for a mobile first design. I tried to build a good HTML doc and add semantic HTML and ARIA where I thought necessary. I then worked on the layout before styling the colours and fonts. I used media queries and flex to make it responsive.  
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Built with
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+### What I learned
 
-## Building your project
+I learnt more about layout and flexbox and positioning different objects. I also learnt about aria-label and aria-hidden. I also enjoyed practicing media queries to make it responsive.
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+```html
+<!-- Would like some feedback on the use of ARIA in this section -->
+<h4 id="retail-price" aria-label="original price $169.99">$169.99</h4>
+      </div>
+      <button id="btn">
+        <img  aria-hidden="true" id="cart-svg" src="./images/icon-cart.svg" alt="">
+        <a id="addtocart" href="#">Add to Cart</a>
+      </button>
+    </div>
+```
+```css
+/* I put the breakpoint at 700px as it was slightly wider than the 40rem container. */
+@media (min-width: 700px) {
+    .container{
+        display: flex;
+        min-width: 40rem;
+        max-height: 30em;
+        border-radius: 15px;
+    }
+    
+    #mobile-img{
+        display: none;
+    }
 
-## Deploying your project
+    #desktop-img{
+        display: flex;
+    }
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### Continued development
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+I look forward to practacing more flexbox and trying out grid as an alternative. I still need to get a better grasp on the box model but I had an easier time positioning objects on this project.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-## Create a custom `README.md`
+### Useful resources
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+- https://www.youtube.com/watch?v=N5wpD9Ov_To
+  A great short video to check up on usiing the right size units.
+- https://www.youtube.com/watch?v=3elGSZSWTbM&t=674s
+  This video helped me to decide if I should use flexbox or grid.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+## Author
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+- Website - https://github.com/timbosTours
+- Frontend Mentor - [@timbosTours](https://www.frontendmentor.io/profile/timbosTours)
+- Twitter - [@](https://www.twitter.com/timbosTours)
 
-## Submitting your solution
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Acknowledgments
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+Thanks as always to the Frontend Mentor community. I would also like to thank Keven Powell for his great videos.
 
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
-# FEM-perfume-card
+https://www.youtube.com/kepowob

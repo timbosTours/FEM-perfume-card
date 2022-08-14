@@ -18,7 +18,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 
 ## Overview
-I created this Frontend Mentor solution using a mobile first approach, flex and media queries.  
+I created this Frontend Mentor solution using a mobile first approach, Flexbox and media queries.  
 
 ### The challenge
 
@@ -100,7 +100,7 @@ I look forward to practacing more flexbox and trying out grid as an alternative.
 
 - Website - https://github.com/timbosTours
 - Frontend Mentor - [@timbosTours](https://www.frontendmentor.io/profile/timbosTours)
-- Twitter - [@](https://www.twitter.com/timbosTours)
+- Twitter - [@timbosTours](https://www.twitter.com/timbosTours)
 
 
 ## Acknowledgments
